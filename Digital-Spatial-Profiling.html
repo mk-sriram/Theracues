@@ -28,7 +28,7 @@
     <style>
         @media (min-width: 1400px){
             .top-bg-size{
-                height: 472px;
+                height: 300px;
             }
             .top-img-padding-top{
                 padding-top: 50px;
@@ -72,10 +72,16 @@
             .dsp-right-mouse:hover {
                 background: url("./images/Protein-Panels-Button-MH-2.png") no-repeat;
             }
+            .flex-column-custom { 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
         }
         @media (max-width: 1399px) and (min-width: 1200px){
             .top-bg-size{
-                height: 419px;
+                height: 300px;
             }
             .top-padding{
                 padding: 0px 40px 0px;
@@ -117,11 +123,17 @@
             .dsp-right-mouse:hover {
                 background: url("./images/Protein-Panels-Button-MH-2.png") no-repeat;
             }
+            .flex-column-custom { 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
         }
         @media (max-width: 1199px) and (min-width: 1000px){
             
             .top-bg-size{
-                height: 367px;
+                height: 300px;
             }
             .top-img-padding-top{
                 padding-top: 50px;
@@ -164,16 +176,23 @@
             .dsp-right-mouse:hover {
                 background: url("./images/Protein-Panels-Button-MH-2.png") no-repeat;
             }
+            .flex-column-custom { 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
         }
         @media (max-width: 999px) and (min-width: 800px){
             .container{
                 max-width: 100% !important;
             }
             .top-bg-size{
-                height: 400px;
+                height: 220px;
             }
             .top-img-padding-top{
                 padding-top: 70px;
+                
             }
             .carousel-caption {
                 bottom: 15px;
@@ -206,6 +225,12 @@
             .dsp-right-mouse:hover {
                 background: url("./images/Protein-Panels-Button-MH-2.png") no-repeat;
             }
+            .flex-column-custom { 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
         }
         @media (max-width: 799px) and (min-width:768px){
             .container{
@@ -217,6 +242,7 @@
             }
             .top-img-padding-top{
                 padding-top: 60px;
+                margin-top: 115px;
             }
             .carousel-caption {
                 bottom: 0px;
@@ -260,6 +286,12 @@
             }
             .dsp-right-mouse:hover {
                 background: url("./images/Protein-Panels-Button-MH-2.png") no-repeat;
+            }
+            .flex-column-custom { 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
             }
         }
         @media (max-width: 767px) and (min-width: 500px){
@@ -267,10 +299,12 @@
                 max-width: 100% !important;
             }
             .top-bg-size{
-                height: 550px;
+                height: 540px;
             }
             .top-img-padding-top{
+                margin-top: 100px;
                 padding-top: 60px;
+                
             }
             .carousel-caption {
                 bottom: 0px;
@@ -315,16 +349,24 @@
             .dsp-right-mouse:hover {
                 background: url("./images/Protein-Panels-Button-MH-2.png") no-repeat;
             }
-        }
+            .flex-column-custom { 
+                display: flex;
+                align-items: center;
+                justify-content: center;
 
+            }
+        }
+      
         @media (max-width: 499px){
             .container{
                 max-width: 100% !important;
             }
             .top-bg-size{
-                height: 650px;
+                height: 600px;
+                
             }
             .top-img-padding-top{
+                margin-top: 90px;
                 padding-top: 70px;
             }
             .carousel-control-prev{
@@ -343,23 +385,35 @@
                 display: none !important;
             }
             .dsp-left-mouse {
-                width: 180px;
+                width: 229px;
                 height: 73px;
                 background-position: center center;
-                background: url("./images/RNA-Panels-Button-3.png") no-repeat;
+                background: url("./images/RNA-Panels-Button-2.png") no-repeat;
                 display: inline-block;
+                
             }
             .dsp-left-mouse:hover {
-                background: url("./images/RNA-Panels-Button-3.png") no-repeat;
+                background: url("./images/RNA-Panels-Button-2.png") no-repeat;
+                 
             }
             .dsp-right-mouse {
-                width: 180px;
+                width: 229px;
                 height: 73px;
-                background: url("./images/Protein-Panels-Button-3.png") no-repeat;
+                background: url("./images/Protein-Panels-Button-2.png") no-repeat;
                 display: inline-block;
+                 
             }
             .dsp-right-mouse:hover {
-                background: url("./images/Protein-Panels-Button-3.png") no-repeat;
+                background: url("./images/Protein-Panels-Button-2.png") no-repeat;
+                
+            }
+
+            .flex-column-custom { 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
             }
         }
 
@@ -1016,41 +1070,57 @@
 </div>
 <!-- END LOADER --> 
 
-
-<div class="container-fluid top-bg-size" style="background-color: #000; ">
-            
+<div class="container-fluid top-bg-size" style="background-color: #000;">
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center ">
+  <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo" data-aos="fade-right"><a href="index.html" class="logo"><img src="./images/theracues_logo-1.png" alt="" class="img-fluid"></a></h1>
+      <h1 class="logo" data-aos="fade-right">
+        <a href="index.html" class="logo"><img src="./images/theracues_logo-1.png" alt="" class="img-fluid"></a>
+      </h1>
       <!-- Uncomment below if you prefer to use an image logo -->
-       
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-aos="fade-right" data-aos-duration="2500" >Solutions</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-aos="fade-right" data-aos-duration="2500">Solutions</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="padding: 0px !important;">
-                <li style="border-bottom: #74bf43 5px solid; border-radius: 5px;">
-                      <div class="container">
-                          <div class="row">
-                              <div class="col-md-6"><a href="Digital-Spatial-Profiling.html" class="solution-drop-menu-bg-top-padding solution-drop-menu-font" data-aos="fade-right" data-aos-duration="2000" >Digital Spatial Profiling</a></div>
-                              <div class="col-md-6"><a href="Targeted-Gene-Expression.html" class="solution-drop-menu-bg-top-padding solution-drop-menu-font" data-aos="fade-right" data-aos-duration="3000" >Targeted Gene Expression</a></div>
-                              <div class="col-md-6"><a href="Cell-Line-Authentication.html" class="solution-drop-menu-bg-padding solution-drop-menu-font" data-aos="fade-right" data-aos-duration="4000" >Cell-Line Authentication</a></div>
-                              <div class="col-md-6"><a href="Bio-Informatics-Services.html" class="solution-drop-menu-bg-padding solution-drop-menu-font" data-aos="fade-right" data-aos-duration="5000" >Bioinformatics Insights</a></div>
-                              <div class="col-md-6"><a href="Extraction-Services.html" class="solution-drop-menu-bg-padding solution-drop-menu-font" data-aos="fade-right" data-aos-duration="6000" >Extraction Services</a></div>
-                              <div class="col-md-6" data-aos="fade-right" data-aos-duration="7000"><a href="Custom-Solutions.html" class="solution-drop-menu-bg-padding solution-drop-menu-font" >Custom Solutions</a></div>
-                          </div>
-                      </div>
-                </li>
+              <li style="border-bottom: #74bf43 5px solid; border-radius: 5px;">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <a href="Digital-Spatial-Profiling.html" class="solution-drop-menu-bg-top-padding solution-drop-menu-font" data-aos="fade-right" data-aos-duration="2000">Digital Spatial Profiling</a>
+                    </div>
+                    <div class="col-md-6">
+                      <a href="Targeted-Gene-Expression.html" class="solution-drop-menu-bg-top-padding solution-drop-menu-font" data-aos="fade-right" data-aos-duration="3000">Targeted Gene Expression</a>
+                    </div>
+                    <div class="col-md-6">
+                      <a href="Cell-Line-Authentication.html" class="solution-drop-menu-bg-padding solution-drop-menu-font" data-aos="fade-right" data-aos-duration="4000">Cell-Line Authentication</a>
+                    </div>
+                    <div class="col-md-6">
+                      <a href="Bio-Informatics-Services.html" class="solution-drop-menu-bg-padding solution-drop-menu-font" data-aos="fade-right" data-aos-duration="5000">Bioinformatics Insights</a>
+                    </div>
+                    <div class="col-md-6">
+                      <a href="Extraction-Services.html" class="solution-drop-menu-bg-padding solution-drop-menu-font" data-aos="fade-right" data-aos-duration="6000">Extraction Services</a>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-right" data-aos-duration="7000">
+                      <a href="Custom-Solutions.html" class="solution-drop-menu-bg-padding solution-drop-menu-font">Custom Solutions</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
             </ul>
-            
           </li>
-          <li><a class="nav-link scrollto" href="Resources.html" data-aos="fade-right" data-aos-duration="2000" >Resources</a></li>
-          <li><a class="nav-link scrollto " href="About.html" data-aos="fade-right" data-aos-duration="1500" >About</a></li>
-          
-          <li><a class="nav-link scrollto " href="Contact.html" data-aos="fade-right" data-aos-duration="1500" >Contact</a></li>
+          <li>
+            <a class="nav-link scrollto" href="Resources.html" data-aos="fade-right" data-aos-duration="2000">Resources</a>
+          </li>
+          <li>
+            <a class="nav-link scrollto" href="About.html" data-aos="fade-right" data-aos-duration="1500">About</a>
+          </li>
+          <li>
+            <a class="nav-link scrollto" href="Contact.html" data-aos="fade-right" data-aos-duration="1500">Contact</a>
+          </li>
           <!--
           <li><a href="blog.html">Blog</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
@@ -1072,114 +1142,50 @@
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           -->
-          
         </ul>
-        
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
       <div style="padding-top: 20px;" class="div-social-icon">
-      <ul>
-        <li class="social-icon-item" data-aos="fade-left" data-aos-duration="200">
+        <ul>
+          <li class="social-icon-item" data-aos="fade-left" data-aos-duration="200">
             <a href="https://twitter.com/TheraCUES" class="social-icon-link bi-twitter"></a>
-        </li>
-
-        <li class="social-icon-item" data-aos="fade-left" data-aos-duration="400">
+          </li>
+          <li class="social-icon-item" data-aos="fade-left" data-aos-duration="400">
             <a href="https://in.linkedin.com/company/theracues" target="_blank" class="social-icon-link-in bi-linkedin"></a>
-        </li>
-<!--
-        <li class="social-icon-item" data-aos="fade-left" data-aos-duration="600">
+          </li>
+          <!--
+          <li class="social-icon-item" data-aos="fade-left" data-aos-duration="600">
             <a href="#" class="social-icon-link bi-instagram"></a>
-        </li>
--->
-    </ul>
-</div>
+          </li>
+          -->
+        </ul>
+      </div>
     </div>
   </header><!-- End Header -->
 
-  
-
-        <!---       Top Slider Image    -->
-
-    <div id="slider-img" class="fixed-top" style="position: absolute !important;" >
-        
-            
-                    <div class="container d-flex align-items-center justify-content-between top-padding container-background" >
-                        <div class="row">
-                        
-                            
-
-                                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" >
-                                        <!--
-                                        <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
-
-                                        </div>
-                                        -->
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active" data-bs-interval="5000">
-                                                <!-- <img src="./images/Digital-Spatial-Profiling-Topper-16.jpg" class="d-block w-100" alt="...">  -->
-                                                
-       
-            <div class="dsp-content">
-              
-                 <div class="dsp-header"> 
-
-    <h1>DIGITAL SPATIAL PROFILING</h1>
-    <h2>The Most Flexible Spatial Solution with GeoMx® DSP</h2>
-</div>
-                <div class="dsp-bullets">
-                    <ul>
-                        <li>Profile up to 22,000 genes spatially with predesigned panels</li>
-                    
-                    <li>Unbiased pathway analysis</li>
-                <li>Biomarker discovery and validation</li>
+  <!--- Top Slider Image -->
+  <div id="slider-img" class="fixed-top" style="position: absolute !important;">
+    <div class="container d-flex align-items-center top-padding container-background">
+      <div class="dsp-content">
+        <div class="dsp-header">
+          <h1>DIGITAL SPATIAL PROFILING</h1>
+          <h2>The Most Flexible Spatial Solution with GeoMx® DSP</h2>
+        </div>
+        <div class="dsp-bullets">
+          <ul>
+            <li>Profile up to 22,000 genes spatially with predesigned panels</li>
+            <li>Unbiased pathway analysis</li>
+            <li>Biomarker discovery and validation</li>
             <li>Rare cell profiling</li>
-        <li>theraCUES support from project planning to Biological Insights</li>
-    </ul>
-</div>
-           
-            </div>
-        
-   
-                                                <div class="carousel-caption d-none d-md-block">
-                                                    <!-- <h5 class="animated bounceInRight" style="animation-delay: 1s; color: white;">Digital Spatial Profiling</h5>
-                                                    <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s; color: #FFF;">The Most Flexible Spatial  Solution  with GeoMx® DSP</p> -->
-                                                    <!-- <p class="animated bounceInRight" style="animation-delay: 3s"><a href="#">CLICK</a></p> -->
-                                                </div>
-                                                
-                                            </div>
-                                        
-                                        </div>
-                                        <!--
-                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" style="filter: none !important; " aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" style="filter: none !important; " aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                        </button>
-                                        -->
-                                    </div>
-
-                            
-
-
-                        </div>
-                    </div>
-               
-
-
+            <li>theraCUES support from project planning to Biological Insights</li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </div>
 
+</div>
 
-                </div>
-            </div>
         <!--        END TOP SLIDER IMAGE-->
 
 
@@ -1217,7 +1223,7 @@
                             </div>
                     </div>
                     
-                    <div  class="col-lg-12 col-md-12 col-sm-12 p-0 d-flex justify-content-center">
+                    <div  class="col-lg-12 col-md-12 col-sm-12 p-0 d-flex flex-column-custom">
                         <a href="RNA-Panels.html"><div class="dsp-left-mouse"></div></a>
                     
                         <a href="Protein-Panels.html"><div class="dsp-right-mouse"></div></a>

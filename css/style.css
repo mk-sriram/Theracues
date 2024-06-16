@@ -970,7 +970,7 @@ footer a {
   background-color: transparent !important;
 }
 
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 799px) {
   .dsp-content {
     /* background-color: red; */
     display: flex;
@@ -1038,7 +1038,7 @@ footer a {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
   /* change width to max min-width, remove max-width, 900*/
 
   .container-background {
@@ -1057,7 +1057,7 @@ footer a {
     align-items: center;
     justify-content: space;
     padding-left: 100px;
-    background-color: red;
+    /* background-color: red; */
     width: 1000px;
   }
 
