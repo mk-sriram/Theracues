@@ -289,7 +289,7 @@ footer a {
 #slider-img {
   transition: all 0.5s;
   z-index: 990;
-  height: 70px;
+  
   top: 102px;
 }
 
@@ -971,6 +971,7 @@ footer a {
 }
 
 @media screen and (max-width: 799px) {
+  
   .dsp-content {
     /* background-color: red; */
     display: flex;
@@ -981,7 +982,7 @@ footer a {
   }
 
   .dsp-bullets {
-    background-color: #09294faf;
+    background-color: rgb(9, 41, 79, 0.45);
     border-radius: 31px;
 
     padding: 20px;
@@ -1049,6 +1050,8 @@ footer a {
     align-items: center;
     justify-content: center;
     width: 100wh;
+    
+    /* background-color: red; */
   }
 
   .dsp-content {
@@ -1062,20 +1065,23 @@ footer a {
   }
 
   .dsp-bullets {
-    background-color: rgba(9, 41, 79, 0.8); /* Semi-transparent background */
-    border-radius: 50%;
-    padding: 100px; /* Adjust padding as needed */
+    background-color: rgba(9, 41, 79, 0.45); /* Semi-transparent background */
+    
+    
     color: white;
-    margin: 20px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 31px;
+    
 
-    transform: translateY(5%); /* Center it vertically */
-    transform: translateX(-50%); /* Center it vertically */
 
-    text-align: center; /* Adjust text alignment */
+    text-align: left; /* Adjust text alignment */
+    z-index: 0;
   }
 
   .dsp-header {
